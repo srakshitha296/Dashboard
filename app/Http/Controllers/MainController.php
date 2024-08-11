@@ -10,19 +10,4 @@ class MainController extends Controller
         return view('dashboard');
     }
 
-    public function profile(){
-        return view('profile');
-    }
-
-    public function activities(){
-        return view('activities');
-    }
-
-    public function activityTypes(){
-        return view('activityTypes');
-    }
-
-    public function workshops(){
-        return view('workshops');
-    }
 }

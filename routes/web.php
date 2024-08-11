@@ -12,10 +12,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', [MainController::class, 'dashboard'])->name('dashboard');
-Route::get('/profile', [MainController::class, 'profile'])->name('profile');
-Route::get('/activities', [MainController::class, 'activities'])->name('activities');
-Route::get('/activityTypes', [MainController::class, 'activityTypes'])->name('activity_types');
-Route::get('/workshops', [MainController::class, 'workshops'])->name('workshops');
+
+// Route::get('/dashboard', function () {
+//     return view('newDashboard');
+// });
+
+ Route::get('/dashboard', [MainController::class, 'dashboard'])->name('dashboard');
+// Route::get('/profile', [MainController::class, 'profile'])->name('profile');
+// Route::get('/activities', [MainController::class, 'activities'])->name('activities');
+// Route::get('/activityTypes', [MainController::class, 'activityTypes'])->name('activity_types');
+// Route::get('/workshops', [MainController::class, 'workshops'])->name('workshops');
 
 
